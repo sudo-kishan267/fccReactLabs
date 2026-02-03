@@ -1,3 +1,7 @@
+
+
+
+
 export const Footer = () => {
   return (
     <footer className="footer">
@@ -5,29 +9,29 @@ export const Footer = () => {
         
         <ul>
           <li>
-            <a href="">Fitness Dashboard</a>
+            <a href="#">Fitness Dashboard</a>
           </li>
           <li>
-            <a href="">Watch Videos</a>
+            <a href="#">Watch Videos</a>
           </li>
         </ul>
         
         <ul>
           <li>
-            <a href="">Discord</a>
+            <a href="#">Discord</a>
           </li>
           <li>
             
-             <a href="">Services</a>
+             <a href="#">Services</a>
           </li>
         </ul>
 
         <ul>
           <li>
-            <a href="">Privacy Policy</a>
+            <a href="#">Privacy Policy</a>
           </li>
           <li>
-           <a href="">Terms & Conditions</a>
+           <a href="#">Terms & Conditions</a>
           </li>        
         </ul>
 
@@ -39,18 +43,20 @@ export const Footer = () => {
       
       <div className="icons">
         <li>
-          <a href="">🎮</a>
+          <a href="#">🎮</a>
         </li>
         <li>
-          <a href="">🐦</a>
+          <a href="#">🐦</a>
         </li>
         <li>
-          <a href="">💻</a>
+          <a href="#">💻</a>
         </li>
         <li>
-          <a href="">🏀</a>
+          <a href="#">🏀</a>
         </li>
       </div>
     </footer>
   );
 };
+
+  
