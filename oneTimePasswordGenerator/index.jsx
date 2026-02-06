@@ -1,7 +1,7 @@
 const { useState, useEffect, useRef } = React;
 
 export const OTPGenerator = () => {
-  const [otp, setOtp] = useState("Click 'Generate OTP' to get a code.");
+  const [otp, setOtp] = useState("Click 'Generate OTP' to get a code");
   const [timeLeft, setTimeLeft] = useState(null);
 
   const handleClick = () => {
@@ -12,7 +12,7 @@ export const OTPGenerator = () => {
     const newOtp = String(array[0] % 1000000).padStart(6, "0");
     
     setOtp(newOtp);
-    setTimeLeft(3);
+    setTimeLeft(5);
   };
 
   // The Timer
