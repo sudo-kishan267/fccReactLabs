@@ -12,7 +12,6 @@ export function EventRSVPForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log("form working");
-
     resultRef.current.innerHTML = `<h2>RSVP Submitted!!</h2>
     <p>Name: ${name}</p>
     <p>Email: ${email}</p>
@@ -21,9 +20,9 @@ export function EventRSVPForm() {
     <p>Bringing Others: ${guests ? "Yes" : "No"}</p>`;
   };
 
-//   useEffect(() => {
-//     console.log(name);
-//   }, [name]);
+  //   useEffect(() => {
+  //     console.log(name);
+  //   }, [name]);
 
   return (
     <div>

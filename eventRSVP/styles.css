@@ -52,23 +52,22 @@ input {
   height: 40px;
   padding: 5px 5px;
 }
-label{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 10px;
+label {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
 }
 #additional-input {
-    margin-left: 10px;
-    transform: scale(1.5);
-    accent-color: #2563eb;
+  margin-left: 10px;
+  transform: scale(1.5);
+  accent-color: #2563eb;
 }
 p {
   margin-top: 10px;
   color: var(--beige);
   font-size: 20px;
 }
-
 button {
   padding: 12px 24px;
   font-size: 16px;
@@ -83,26 +82,21 @@ button {
   width: 50%;
   margin-left: 25%;
 }
-
 button:hover {
   background-color: #1d4ed8;
   transform: translateY(-1px);
 }
-
 button:active {
   transform: translateY(0);
 }
-
 button:disabled {
   background-color: #9ca3af;
   cursor: not-allowed;
 }
-.result{
-    margin-top: 15px;
-    width: 95%;
-    
+.result {
+  margin-top: 15px;
+  width: 95%;
 }
-
 .copyright {
   margin-top: 30px;
   font-family: "Dancing Script", cursive;
@@ -112,4 +106,3 @@ button:disabled {
   color: var(--beige);
   padding-right: 50px;
 }
-
