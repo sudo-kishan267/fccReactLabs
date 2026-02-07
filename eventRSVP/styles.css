@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+:root {
+  --grey: #5e5e5e;
+  --light-grey: #bbbbbb;
+  --beige: #fff0db;
+  --text-color: #fff;
+  --danger-color: #850000;
+  --danger-background: #ffadad;
+  --button: #2563eb;
+  --button-hover: #1d4ed8;
+  --border: #454553;
+  --body-background-1: #ffffff33;
+  --body-background-2: #2d3748;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+html {
+  background-color: var(--body-background-2);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff33;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 450px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  font-size: 20px;
+}
+input {
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px 5px;
+}
+label{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+#additional-input {
+    margin-left: 10px;
+    transform: scale(1.5);
+    accent-color: #2563eb;
+}
+p {
+  margin-top: 10px;
+  color: var(--beige);
+  font-size: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb; /* blue */
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+.result{
+    margin-top: 15px;
+    width: 95%;
+    
+}
+
+.copyright {
+  margin-top: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4rem;
+  text-align: end;
+  width: 100%;
+  color: var(--beige);
+  padding-right: 50px;
+}
+
