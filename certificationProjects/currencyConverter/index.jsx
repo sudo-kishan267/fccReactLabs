@@ -1,10 +1,9 @@
-const { useState, useMemo, useRef, useEffect} = React;
+const { useState, useMemo, useRef, useEffect } = React;
 
 export function CurrencyConverter() {
   //  As on 10/02/2026
   const inrBaseCurrencyMap = {
     INR: 1,
-
     USD: 0.012, // US Dollar
     EUR: 0.0111, // Euro
     GBP: 0.0096, // British Pound
@@ -17,7 +16,7 @@ export function CurrencyConverter() {
     NZD: 0.0218, // New Zealand Dollar
   };
 
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(10);
   const [fromCurr, setFromCurr] = useState("INR");
   const [toCurr, setToCurr] = useState("USD");
   const [converted, setConverted] = useState("0.00");
@@ -35,9 +34,8 @@ export function CurrencyConverter() {
       return;
     }
     const result = amountInINR * inrBaseCurrencyMap[toCurr];
-
     setConverted(result.toFixed(2));
-  }, [input, fromCurr]);
+  }, [input, fromCurr, toCurr]);
 
   return (
     <div className="main">
@@ -113,3 +111,4 @@ export function CurrencyConverter() {
     </div>
   );
 }
+
