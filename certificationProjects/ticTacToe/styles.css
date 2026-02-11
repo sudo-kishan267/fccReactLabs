@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+:root {
+  --grey: #5e5e5e;
+  --light-grey: #bbbbbb;
+  --beige: #fff0db;
+  --text-color: #fff;
+  --danger-color: #850000;
+  --danger-background: #ffadad;
+  --button: #2563eb;
+  --button-hover: #1d4ed8;
+  --border: #454553;
+  --body-background-1: #ffffff33;
+  --body-background-2: #2d3748;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+html {
+  background-color: var(--body-background-2);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff33;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 450px;
+}
+
+h1 {
+  margin-bottom: -20px;
+  color: #EB5353;
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+}
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+  margin: 40px auto 20px auto;
+  padding: 5px;
+  
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  background-color: #1e293b; /* dark slate */
+  color: #EB5353; /* white text */
+  border: 2px solid #38bdf8; /* blue border */
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease;
+}
+
+.square:hover {
+  background-color: #334155;
+  transform: scale(1.05);
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+.square:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.reset-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #38bdf8;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  width: 50%;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.reset-btn:hover {
+  background-color: #111827;
+  transform: translateY(-1px);
+}
+.reset-btn:active {
+  transform: translateY(0);
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    color: #22c55e;
+  }
+  50% {
+    opacity: 0.4;
+    color: #19ff19;
+  }
+  100% {
+    opacity: 1;
+    color: #22c55e;
+  }
+}
+
+.blink {
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.result {
+  margin : auto;
+}
+.winner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  
+  /* text-transform: uppercase; */
+}
+.trophy {
+  font-size: 3rem;
+}
+.copyright {
+  margin-top: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4rem;
+  text-align: end;
+  width: 100%;
+  color: var(--beige);
+  padding-right: 50px;
+}
+
+@media (max-width: 480px),(max-height: 820px) {
+
+  .game-board {
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 6px;
+  }
+
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    border-radius: 8px;
+  }
+
+  .winner-text {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 16px;
+  }
+
+  .reset-btn {
+    margin-top: 16px;
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+}
