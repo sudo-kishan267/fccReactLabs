@@ -62,7 +62,7 @@ export function Board() {
         
         <div className="game-board">
           
-          // This is the react way !!! Ha ha
+          {/* This is the react way !!! Ha ha*/}
           
           {squares.map((value, index) => (
             <button
