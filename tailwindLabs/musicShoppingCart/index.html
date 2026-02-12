@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Shopping Cart Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      /* * {
+        outline: 2px solid white;
+      } */
+      .font-cursive {
+      font-family: 'Pacifico', cursive;
+    }
+    </style>
+  </head>
+  <body class="bg-gray-800">
+    <div id="#shopping-cart-container" class="flex flex-col lg:flex-col gap-y-8 mt-14 justify-center items-center">
+      <h2 class="font-cursive text-center text-6xl font-bold text-lime-600 mb-6">
+        Klipsch Shopping Cart
+      </h2>
+      <div id="#products-container" class="flex flex-wrap gap-6 justify-center">
+        <div class="card bg-gray-900 rounded-2xl shadow-lg p-6 w-full max-w-md">
+          <!-- Product Image -->
+          <img
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQDMziQTzLp9OG9vyY5XQ57z3OOWOuQ6ZacTF5b-KG8Z5dUqNiismHLXcqyasFSfftgDCMlnqE42SCNlToft6wH2aRXJ6QLbYmEqft7Vam18IcqPvWtrRrT"
+            alt="Product Image"
+            class="rounded-xl w-full h-52 object-cover text-white"
+          />
+
+          <!-- Product Info -->
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-gray-200">
+              R-625fa Floorstanding Speakers
+            </h2>
+
+            <p class="text-gray-300 text-sm mt-1">
+              Built with an elevation channel integrated into the top, the
+              R-625FA Dolby Atmos floorstanding speaker not only delivers stereo
+              sound toward the listener.
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center justify-between mt-4">
+              <span class="price text-2xl font-bold text-gray-100">
+                ₹45000
+              </span>
+
+              <span class="text-sm text-gray-400 line-through"> ₹60000 </span>
+            </div>
+
+            <!-- Quantity + Remove -->
+            <div class="flex items-center justify-between mt-5">
+              <!-- Quantity Controls -->
+              <div class="flex items-center border rounded-lg text-white">
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  -
+                </button>
+                <span class="quantity px-4 py-1">2</span>
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  +
+                </button>
+              </div>
+
+              <!-- Remove Button -->
+              <button
+                class=" remove-button text-red-500 hover:text-red-600 font-medium"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-gray-900 rounded-2xl shadow-lg p-6 w-full max-w-md">
+          <!-- Product Image -->
+          <img
+            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQpx7qUAOPXRsFAZA-Q1J8e8xlc3jD-1hLkmpEiAxGqgFd2JwZNE_zLtfeeTsc1rDe-vu5v990WkXF-od978eOkIrT1tGn4"
+            alt="Product Image"
+            class="rounded-xl w-full h-52 object-cover text-white"
+          />
+
+          <!-- Product Info -->
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-gray-200">
+              R-12sw Subwoofers
+            </h2>
+
+            <p class="text-gray-300 text-sm mt-1">
+              Speaker Maximum Output Power, 400 Watts · Frequency Response, 29
+              Hz · Network Connectivity Technology, Bluetooth, Coaxial, RCA.
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center justify-between mt-4">
+              <span class="price text-2xl font-bold text-gray-100">
+                ₹44999
+              </span>
+
+              <span class="text-sm text-gray-400 line-through"> ₹56999 </span>
+            </div>
+
+            <!-- Quantity + Remove -->
+            <div class="flex items-center justify-between mt-5">
+              <!-- Quantity Controls -->
+              <div class="flex items-center border rounded-lg text-white">
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  -
+                </button>
+                <span class="quantity px-4 py-1">2</span>
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  +
+                </button>
+              </div>
+
+              <!-- Remove Button -->
+              <button
+                class="remove-button text-red-500 hover:text-red-600 font-medium"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-gray-900 rounded-2xl shadow-lg p-6 w-full max-w-md">
+          <!-- Product Image -->
+          <img
+            src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:450/klipsch/492338657/0/0gewK-Or_G-3tBPXJRyka-KLIPSCH-R-52C-SPECIALITYSPEAKERS-492338657-i-1-1200Wx1200H.jpeg"
+            alt="Product Image"
+            class="rounded-xl w-full h-52 object-cover text-white"
+          />
+
+          <!-- Product Info -->
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-gray-200">R-52c Center</h2>
+
+            <p class="text-gray-300 text-sm mt-1">
+              Get crystal-clear sound for your movie dialogue and music lyrics
+              with the incredible acoustics from the R-52C center channel
+              speaker. Our proprietary Tractrix horn-loaded technology gives you
+              a lifelike, front-row listening experience unlike any other.
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center justify-between mt-4">
+              <span class="price text-2xl font-bold text-gray-100">
+                ₹36999</span
+              >
+
+              <span class="text-sm text-gray-400 line-through"> ₹49999 </span>
+            </div>
+
+            <!-- Quantity + Remove -->
+            <div class="flex items-center justify-between mt-5">
+              <!-- Quantity Controls -->
+              <div class="flex items-center border rounded-lg text-white">
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  -
+                </button>
+                <span class="quantity px-4 py-1">1</span>
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  +
+                </button>
+              </div>
+
+              <!-- Remove Button -->
+              <button
+                class="remove-button text-red-500 hover:text-red-600 font-medium"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-gray-900 rounded-2xl shadow-lg p-6 w-full max-w-md">
+          <!-- Product Image -->
+          <img
+            src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:450/klipsch/492338660/0/QG0-9De_Rg-JReNJw8c9Y-KLIPSCH-R-41M-5-1CHMMS-492338660-i-1-1200Wx1200H.jpeg"
+            alt="Product Image"
+            class="rounded-xl w-full h-52 object-cover text-white"
+          />
+
+          <!-- Product Info -->
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-gray-200">
+              R-41m Bookshelf Speakers
+            </h2>
+
+            <p class="text-gray-300 text-sm mt-1">
+              The R-41M bookshelf speakers offer maximum versatility without
+              sacrificing performance from a small, yet elegant audio solution.
+              Designed as main speakers for a compact living space or surround
+              sound to support a Reference speaker system, the R-41M bookshelf
+              speakers are the ideal choice for your home theater system.
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center justify-between mt-4">
+              <span class="price text-2xl font-bold text-gray-100">
+                ₹26999
+              </span>
+
+              <span class="text-sm text-gray-400 line-through"> ₹45999 </span>
+            </div>
+
+            <!-- Quantity + Remove -->
+            <div class="flex items-center justify-between mt-5">
+              <!-- Quantity Controls -->
+              <div class="flex items-center border rounded-lg text-white">
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  -
+                </button>
+                <span class="quantity px-4 py-1">2</span>
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  +
+                </button>
+              </div>
+
+              <!-- Remove Button -->
+              <button
+                class="remove-button text-red-500 hover:text-red-600 font-medium"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-gray-900 rounded-2xl shadow-lg p-6 w-full max-w-md">
+          <!-- Product Image -->
+          <img
+            src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcScA_aOJJhk0IYdJV8nyASHwEWrvvtGJBfqvBmsfA3pZdW1D_CtP9JqlkvbJfwy-QZeS-iU-viQ7JYsuqW6hafXwhiwE1i58mSlgH5FxJOTiXvM0v_Pr46H"
+            alt="Product Image"
+            class="rounded-xl w-full h-52 object-cover text-white"
+          />
+
+          <!-- Product Info -->
+          <div class="mt-4">
+            <h2 class="text-xl font-semibold text-gray-200">
+              Aventage Rx-a2a 7.2
+            </h2>
+
+            <p class="text-gray-300 text-sm mt-1">
+              For immersive audio | Supports Dolby Atmos and DTS for 3D sound |
+              MusicCast capability for multi-room streaming | HDMI inputs for
+              easy connectivity with various devices | High-quality construction
+              for durability and performance | Sleek black finish for a modern
+              aesthetic in any home theater
+            </p>
+
+            <!-- Price -->
+            <div class="flex items-center justify-between mt-4">
+              <span class="price text-2xl font-bold text-gray-100">
+                ₹25000
+              </span>
+
+              <span class="text-sm text-gray-400 line-through"> ₹45000 </span>
+            </div>
+
+            <!-- Quantity + Remove -->
+            <div class="flex items-center justify-between mt-5">
+              <!-- Quantity Controls -->
+              <div class="flex items-center border rounded-lg text-white">
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  -
+                </button>
+                <span class="quantity px-4 py-1">1</span>
+                <button
+                  class="px-3 py-1 text-lg font-bold hover:bg-gray-700 rounded-lg"
+                >
+                  +
+                </button>
+              </div>
+
+              <!-- Remove Button -->
+              <button
+                class="remove-button text-red-500 hover:text-red-600 font-medium"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        id="order-summary-container"
+        class="border rounded-xl mb-8 max-w-md bg-cyan-950 rounded-md border-indigo-400 p-4 text-gray-100 flex flex-col items-center gap-4"
+      >
+        <h2 class="text-2xl font-semibold mr-auto">Order Summary</h2>
+        <p>This is a Dream Home Theater Setup. Klipsch Reference 5.2 Pack.</p>
+        <p id="total" class="font-bold flex justify-between ml-auto">Total: <span id="total-amount" class="ml-2">₹2,95,995</span></p>
+        <a href="#" class="text-right bg-blue-600 ml-auto rounded-lg py-2 px-6 hover:bg-blue-700  hover:scale-105 
+               transition duration-300 ease-in-out">Checkout</a>
+      </div>
+    </div>
+  </body>
+</html>
