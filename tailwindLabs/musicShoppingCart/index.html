@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Shopping Cart Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <style>
       /* * {
         outline: 2px solid white;
       } */
       .font-cursive {
-      font-family: 'Pacifico', cursive;
-    }
+        font-family: "Pacifico", cursive;
+      }
     </style>
   </head>
   <body class="bg-gray-800">
-    <div id="#shopping-cart-container" class="flex flex-col lg:flex-col gap-y-8 mt-14 justify-center items-center">
-      <h2 class="font-cursive text-center text-6xl font-bold text-lime-600 mb-6">
+    <div
+      id="shopping-cart-container"
+      class="flex flex-col lg:flex-row gap-y-8 mt-14 justify-center items-center"
+    >
+      <h2
+        class="font-cursive text-center text-6xl font-bold text-lime-600 mb-6"
+      >
         Klipsch Shopping Cart
       </h2>
-      <div id="#products-container" class="flex flex-wrap gap-6 justify-center">
+      <div id="products-container" class="flex flex-wrap gap-6 justify-center">
         <div class="card bg-gray-900 rounded-2xl shadow-lg p-6 w-full max-w-md">
           <!-- Product Image -->
           <img
@@ -69,7 +77,7 @@
 
               <!-- Remove Button -->
               <button
-                class=" remove-button text-red-500 hover:text-red-600 font-medium"
+                class="remove-button bg-red-600 hover:bg-red-700 rounded p-1 font-medium"
               >
                 Remove
               </button>
@@ -124,7 +132,7 @@
 
               <!-- Remove Button -->
               <button
-                class="remove-button text-red-500 hover:text-red-600 font-medium"
+                class="remove-button bg-red-600 hover:bg-red-700 rounded p-1 font-medium"
               >
                 Remove
               </button>
@@ -179,7 +187,7 @@
 
               <!-- Remove Button -->
               <button
-                class="remove-button text-red-500 hover:text-red-600 font-medium"
+                class="remove-button bg-red-600 hover:bg-red-700 rounded p-1 font-medium"
               >
                 Remove
               </button>
@@ -237,7 +245,7 @@
 
               <!-- Remove Button -->
               <button
-                class="remove-button text-red-500 hover:text-red-600 font-medium"
+                class="remove-button bg-red-600 hover:bg-red-700 rounded p-1 font-medium"
               >
                 Remove
               </button>
@@ -294,7 +302,7 @@
 
               <!-- Remove Button -->
               <button
-                class="remove-button text-red-500 hover:text-red-600 font-medium"
+                class="remove-button bg-red-600 hover:bg-red-700 rounded p-1 font-medium"
               >
                 Remove
               </button>
@@ -302,16 +310,24 @@
           </div>
         </div>
       </div>
-      
+
       <div
         id="order-summary-container"
         class="border rounded-xl mb-8 max-w-md bg-cyan-950 rounded-md border-indigo-400 p-4 text-gray-100 flex flex-col items-center gap-4"
       >
         <h2 class="text-2xl font-semibold mr-auto">Order Summary</h2>
-        <p>This is a Dream Home Theater Setup. Klipsch Reference 5.2 Pack.</p>
-        <p id="total" class="font-bold flex justify-between ml-auto">Total: <span id="total-amount" class="ml-2">₹2,95,995</span></p>
-        <a href="#" class="text-right bg-blue-600 ml-auto rounded-lg py-2 px-6 hover:bg-blue-700  hover:scale-105 
-               transition duration-300 ease-in-out">Checkout</a>
+        <div class="flex justify-center items-center gap-2">
+          <p id="total" class="font-bold text-xl flex justify-between">
+            Total:
+          </p>
+          <p id="total-amount">₹2,95,995</p>
+        </div>
+
+        <a
+          href="#"
+          class="text-center bg-blue-600 rounded-lg py-2 px-6 hover:bg-blue-700 hover:scale-105 transition duration-300 ease-in-out"
+          >Checkout</a
+        >
       </div>
     </div>
   </body>
